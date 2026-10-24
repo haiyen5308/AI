@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HanziGo | Học từ vựng tiếng Trung</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#"><span class="brand-icon">汉</span><span>Hanzi<span class="brand-red">Go</span><small>HỌC TỪ VỰNG TIẾNG TRUNG</small></span></a>
+    <span class="daily-tag">每一天 · Mỗi ngày một chút</span>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <div class="hero-copy">
+        <p class="eyebrow">CHÀO MỪNG BẠN ĐẾN VỚI HANZIGO</p>
+        <h1>Học tiếng Trung<br><span>bắt đầu từ hôm nay.</span></h1>
+        <p class="hero-desc">Học từ mới từng chút một, ghi nhớ lâu hơn và tự tin đọc những câu tiếng Trung đầu tiên.</p>
+        <a class="hero-button" href="#vocabulary">Bắt đầu học <span>→</span></a>
+      </div>
+      <div class="hero-art" aria-label="Chữ Hán xin chào">
+        <span class="art-circle circle-one"></span><span class="art-circle circle-two"></span>
+        <div class="hanzi-card"><span class="hanzi-big">你好</span><span class="hanzi-pinyin">nǐ hǎo</span><span class="hanzi-meaning">Xin chào!</span></div>
+        <span class="floating-word word-one">学习</span><span class="floating-word word-two">朋友</span>
+      </div>
+    </section>
+
+    <section class="stats" aria-label="Tiến độ học tập">
+      <div class="stat-card"><span class="stat-icon">📚</span><div><strong id="totalCount">12</strong><span>Từ vựng mẫu</span></div></div>
+      <div class="stat-card"><span class="stat-icon">❤️</span><div><strong id="favoriteCount">0</strong><span>Từ yêu thích</span></div></div>
+      <div class="stat-card"><span class="stat-icon">✓</span><div><strong id="learnedCount">0</strong><span>Đã học</span></div></div>
+    </section>
+
+    <section class="vocabulary-section" id="vocabulary">
+      <div class="section-heading">
+        <div><p class="eyebrow">YOUR VOCABULARY</p><h2>Kho từ vựng</h2><p class="muted">Chọn một từ để bắt đầu ghi nhớ.</p></div>
+        <label class="search-box"><span>⌕</span><input id="searchInput" type="search" placeholder="Tìm chữ Hán, pinyin, nghĩa..." aria-label="Tìm từ vựng"></label>
+      </div>
+
+      <div class="filters" id="topicFilters">
+        <button class="filter active" data-topic="Tất cả">Tất cả</button>
+        <button class="filter" data-topic="Chào hỏi">Chào hỏi</button>
+        <button class="filter" data-topic="Con người">Con người</button>
+        <button class="filter" data-topic="Học tập">Học tập</button>
+        <button class="filter" data-topic="Hằng ngày">Hằng ngày</button>
+        <button class="filter" data-topic="Yêu thích">♥ Yêu thích</button>
+      </div>
+
+      <div class="results-line"><span id="resultsText">12 từ vựng</span><span>Nhấn biểu tượng loa để nghe phát âm*</span></div>
+      <div class="word-grid" id="wordGrid"></div>
+      <div class="empty-state" id="emptyState" hidden>Không tìm thấy từ phù hợp. Thử từ khóa khác nhé!</div>
+      <p class="note">* Phát âm sử dụng giọng đọc có sẵn của trình duyệt; chất lượng và giọng đọc có thể khác nhau tùy thiết bị.</p>
+    </section>
+
+    <section class="tip-banner">
+      <div class="tip-icon">✦</div><div><strong>Mẹo học hiệu quả</strong><p>Học 5–10 từ mỗi ngày, đọc to pinyin và đặt một câu ví dụ cho mỗi từ.</p></div>
+    </section>
+  </main>
+
+  <footer><span class="footer-brand">汉 HanziGo</span><span>Học một từ mới, tiến một bước gần hơn.</span></footer>
+  <script src="script.js"></script>
+</body>
+</html>
